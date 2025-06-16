@@ -9,6 +9,7 @@ class Node<T>(val data : T , var next : Node<T>?=null)
 
 class CustomLinkedList<T> {
     var head : Node<T>? = null //first node in list
+    var tail : Node<T>? = null //last node in list
 
     fun add(data : T){
         val newNode = Node(data)
@@ -23,6 +24,16 @@ class CustomLinkedList<T> {
         }
     }
 
+    fun insertLast(data: T){
+        val newNode = Node(data)
+        if(head==null){
+            head = newNode
+            tail = newNode
+        }else{
+            tail?.next = newNode
+            tail = newNode
+        }
+    }
     fun delete(data : T) {
         if (head==null) return
         if(head?.data==data){

@@ -7,8 +7,9 @@ fun main() {
 
     val customLinkedList : CustomLinkedList<Int> = CustomLinkedList()
 
-    customLinkedList.add(15)
-    customLinkedList.add(10)
+    customLinkedList.insertLast(15)
+    customLinkedList.insertLast(10)
+    customLinkedList.insertLast(10)
     customLinkedList.delete(10)
     customLinkedList.printList()
 }
