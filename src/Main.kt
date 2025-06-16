@@ -10,6 +10,7 @@ fun main() {
     customLinkedList.insertLast(15)
     customLinkedList.insertLast(10)
     customLinkedList.insertLast(10)
-    customLinkedList.delete(10)
-    customLinkedList.printList()
+//    customLinkedList.delete(10)
+    customLinkedList.print()
+    println(customLinkedList.getHeadData())
 }
